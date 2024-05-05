@@ -59,3 +59,101 @@ tr:nth-child(even) {
 .pagination-button:not(:last-child) {
     margin-right:0px;
 }
+
+
+------------------------------------------------------------------------------------
+
+
+
+.cve-details {
+    color: #000;
+}
+
+.cve-details h2 {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.cve-details p {
+    color: #333; /* Dark gray */
+}
+
+.cve-details {
+    padding: 20px; /* Add padding */
+    margin: 20px auto; /* Add margin and center horizontally */
+    max-width: 800px; /* Set a maximum width */
+}
+
+.metrics-table th, .metrics-table td,
+.cpe-table th, .cpe-table td {
+    padding: 8px; /* Add padding */
+}
+
+.metrics {
+    margin-bottom: 20px;
+}
+
+.metrics p {
+    margin-bottom: 5px;
+}
+
+.metrics p span {
+    font-weight: bold;
+}
+
+.metrics-table, .cpe-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.metrics-table th, .metrics-table td,
+.cpe-table th, .cpe-table td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.metrics-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.cpe-table th {
+    background-color: #333; /* Dark gray */
+    color: #fff;
+}
+
+.loading_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    z-index: 999; /* Ensure it's above other content */
+}
+
+.loading {
+    position: absolute; /* Position the loading indicator */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the loading indicator precisely */
+}
+
+/* Add animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333; /* Change the color as needed */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Apply the animation */
+}
+
